@@ -1,0 +1,4 @@
+﻿<Response>
+    <Say>"That was an invalid response."</Say>
+     <Redirect method="GET">main-menu.xml</Redirect>
+</Response>

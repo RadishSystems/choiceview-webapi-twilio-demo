@@ -1,0 +1,40 @@
+﻿@using System;
+@using System.Threading;
+@using Twilio;
+@using log4net;
+@using CVClassLib;
+@using System.IO;
+
+@{
+    
+    Response.ContentType = "text/xml";
+    
+    var twiml = new Twilio.TwiML.TwilioResponse();
+    
+    int user_pushed;
+    if (String.IsNullOrEmpty(Request["Digits"]))
+    {
+        user_pushed = 0;
+    }
+    else
+    {
+        user_pushed = int.Parse(Request["Digits"]);
+    }
+    
+    if (user_pushed == 1)
+    {
+        twiml.Redirect("main-menu.xml", "GET");
+    }
+    else
+    {
+        if (user_pushed == 0)
+        {
+            twiml.Redirect("thank-you.xml", "GET");
+        }
+        else
+        {
+            twiml.Redirect("invalid-main-response.xml", "GET");
+        }
+    }
+}
+@Html.Raw(twiml.ToString())

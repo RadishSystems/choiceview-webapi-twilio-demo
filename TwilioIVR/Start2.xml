@@ -1,0 +1,7 @@
+﻿<Response>
+    <Gather action="handle-initial-user-input.cshtml" numDigits="1">
+	    <Say>"Welcome to the visual IVR from Twilio and Radish Systems.  You'll receive visual menus and responses on your smart mobile device.  Just stay on this call and return to the Home screen.  Tap ChoiceView, then tap Start.  If you don't have ChoiceView, press 1.  You'll hear the normal voice prompts."</Say>
+    </Gather>
+    <!-- Assume ChoiceView. -->
+    <Redirect>handle-initial-user-input.cshtml</Redirect>
+</Response>

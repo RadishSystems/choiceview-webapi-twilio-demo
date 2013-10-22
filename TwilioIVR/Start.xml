@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Gather action="launchCV.cshtml" numDigits="1" timeout="1">
+        <Play>ChoiceView_Radish.wav</Play>        
+    </Gather>
+    <Redirect>launchCV.cshtml</Redirect>
+</Response>

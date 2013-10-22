@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>"Here is your order status.  You can page back to it and save it in History for future reference."</Say>
+    <Pause length="10"/>
+   <Redirect method="GET">CVMain.xml</Redirect>
+</Response>

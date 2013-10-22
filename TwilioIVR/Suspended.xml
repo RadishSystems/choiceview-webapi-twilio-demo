@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>"OK. We'll wait for one minute for you to return."</Say>
+    <Pause length="60"/>
+   <Redirect method="GET">Suspended.xml</Redirect>
+</Response>

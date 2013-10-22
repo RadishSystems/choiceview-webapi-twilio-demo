@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>"The ChoiceView server has ended the session. Goodbye."</Say>
+    <Redirect method="GET">CVGoodbye.xml</Redirect>    
+</Response>

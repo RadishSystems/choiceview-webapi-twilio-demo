@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>"From here, you can browse the Radish website."</Say>
+    <Pause length="2"/>    
+    <Redirect method="GET">CVGoodBye.xml</Redirect>
+</Response>

@@ -1,0 +1,34 @@
+﻿@using System;
+@using System.IO;
+@using Twilio;
+@using CVClassLib;
+@using System.Threading;
+
+@{
+    
+    string Caller = (string)Request["sessionid"];    
+    string AccountSid = (string)AppState["AccountSid"];
+    string SessionURIString;
+    string tempPath = HttpContext.Current.Server.MapPath("~/App_Data/");
+    
+    string filePath = tempPath + Caller + ".txt";
+    if (File.Exists(filePath))  // session created
+    {
+        StreamReader srFile = new StreamReader(filePath);
+        SessionURIString = srFile.ReadToEnd();
+        srFile.Close();
+    }
+    else
+    {
+        SessionURIString = "http://empty";
+    }
+
+    Uri SessionURI = new Uri(SessionURIString);
+    
+    cvWorkThread cvThread = new cvWorkThread(Caller, "new message", AccountSid, SessionURI);
+
+    Thread workerThread = new Thread(cvThread.HandleControlMessageNew);
+    workerThread.Start();
+    workerThread.Join();
+}
+

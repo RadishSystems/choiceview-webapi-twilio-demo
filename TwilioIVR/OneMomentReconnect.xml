@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>"One moment please while we reconnect with the mobile device."</Say>
+    <Pause length="30"/>
+   <Redirect method="GET">main-menu.xml</Redirect>
+</Response>

@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>"The system is having a problem right now. Please try again later. Good Bye."</Say>
+    <Hangup></Hangup>
+</Response>

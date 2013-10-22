@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>"ChoiceView is now connected with the mobile device."</Say>
+    <Pause length="30"/>
+</Response>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>"This is the main menu.  Please tap your selection at any time."</Say>
+    <Pause length="15"/>
+   <Redirect method="GET">CVMain.xml</Redirect>
+</Response>

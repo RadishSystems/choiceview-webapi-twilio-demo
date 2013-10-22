@@ -1,0 +1,33 @@
+﻿@using System;
+@using System.Threading;
+@using Twilio;
+@using log4net;
+@using CVClassLib;
+@using System.IO;
+
+@{
+    Response.ContentType = "text/xml";
+
+    var twiml = new Twilio.TwiML.TwilioResponse();
+
+    String Caller = Request["Caller"];
+    var trimChars = "+1";
+    Caller = Caller.TrimStart(trimChars.ToCharArray());
+    AppState["Caller"] = Caller;
+
+    string CallSid = Request["CallSid"];
+    string AccountSid = Request["AccountSid"];
+    
+    AppState["Caller"] = Caller;
+    AppState["CallSid"] = CallSid;
+    AppState["AccountSid"] = AccountSid;
+    AppState["SessionURI"] = "";
+    AppState["StartupFailed"] = false;
+
+    cvWorkThread cvThread = new cvWorkThread(Caller, CallSid, AccountSid, null);
+    Thread workerThread = new Thread(cvThread.StartCVSession);
+    workerThread.Start();
+    workerThread.Join();
+    twiml.Redirect("Start2.xml", "GET"); 
+}
+@Html.Raw(twiml.ToString())

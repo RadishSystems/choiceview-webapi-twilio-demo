@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>"I am sorry. We are unable to communicate with the mobile device. Please try again later. Goodbye."</Say>
+    <Redirect method="GET">CVGoodbye.xml</Redirect>    
+</Response>

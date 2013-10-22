@@ -1,0 +1,932 @@
+2013-06-10 11:33:21,668 INFO 6 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:3034389919 CallID:CAd43c2ba71742159cdf124e9f17070776 Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:
+
+2013-06-10 11:33:22,212 INFO 6 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-10 11:33:22,212 INFO 6 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-10 11:33:22,233 INFO 6 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-10 11:33:22,234 INFO 6 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-10 11:33:22,234 INFO 6 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-10 11:33:22,234 INFO 6 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-10 11:33:22,234 INFO 6 CVClassLib.cvWorkThread - SessionURI property set to - 
+2013-06-10 11:33:23,933 INFO 10 CVClassLib.cvWorkThread - StartCVSession started.
+
+2013-06-10 11:33:23,933 INFO 10 CVClassLib.cvWorkThread - CVStartUpFailed property set to - False
+2013-06-10 11:33:23,952 INFO 10 CVClassLib.cvWorkThread - StartCVSession inside try block 
+2013-06-10 11:33:23,952 INFO 10 CVClassLib.cvWorkThread - stateChangeURI is http://web1.tunnlr.com:12670/state_change.cshtml
+2013-06-10 11:33:23,952 INFO 10 CVClassLib.cvWorkThread - newMessageURI is http://web1.tunnlr.com:12670/new_message.cshtml
+2013-06-10 11:33:23,953 INFO 10 CVClassLib.cvWorkThread - callerId is 3034389919
+2013-06-10 11:33:23,953 INFO 10 CVClassLib.cvWorkThread - callId is CAd43c2ba71742159cdf124e9f17070776
+2013-06-10 11:33:23,953 INFO 10 CVClassLib.cvWorkThread - SessionsUri.AbsoluteUri is https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-10 11:33:23,975 INFO 10 CVClassLib.cvWorkThread - StartCVSession after Post task
+2013-06-10 11:33:23,975 INFO 10 CVClassLib.cvWorkThread - leaving StartCVSession 
+2013-06-10 11:34:28,732 INFO 14 CVClassLib.cvWorkThread - StartCVSession inside PostAsJsonAsync task 
+2013-06-10 11:34:28,734 INFO 14 CVClassLib.cvWorkThread - StartCVSession POST https://cvnet2.radishsystems.com/ivr/api/sessions failed! Reason - InternalServerError, Internal Server Error, <html>
+    <head>
+        <title>Runtime Error</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/IVR' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Runtime Error</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine.
+            <br><br>
+
+            <b>Details:</b> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;Off&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Notes:</b> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application&#39;s &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+    </body>
+</html>
+
+2013-06-10 11:34:28,734 INFO 14 CVClassLib.cvWorkThread - CVStartUpFailed property set to - True
+2013-06-10 14:01:45,540 INFO 16 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:3034389919 CallID:CA8e7c190f3291fc71c4f712eacefe4821 Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:
+
+2013-06-10 14:01:45,565 INFO 16 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-10 14:01:45,565 INFO 16 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-10 14:01:45,566 INFO 16 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-10 14:01:45,566 INFO 16 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-10 14:01:45,566 INFO 16 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-10 14:01:45,567 INFO 16 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-10 14:01:45,567 INFO 16 CVClassLib.cvWorkThread - SessionURI property set to - 
+2013-06-10 14:01:45,568 INFO 14 CVClassLib.cvWorkThread - StartCVSession started.
+
+2013-06-10 14:01:45,568 INFO 14 CVClassLib.cvWorkThread - CVStartUpFailed property set to - False
+2013-06-10 14:01:45,568 INFO 14 CVClassLib.cvWorkThread - StartCVSession inside try block 
+2013-06-10 14:01:45,569 INFO 14 CVClassLib.cvWorkThread - stateChangeURI is http://web1.tunnlr.com:12670/state_change.cshtml
+2013-06-10 14:01:45,569 INFO 14 CVClassLib.cvWorkThread - newMessageURI is http://web1.tunnlr.com:12670/new_message.cshtml
+2013-06-10 14:01:45,569 INFO 14 CVClassLib.cvWorkThread - callerId is 3034389919
+2013-06-10 14:01:45,569 INFO 14 CVClassLib.cvWorkThread - callId is CA8e7c190f3291fc71c4f712eacefe4821
+2013-06-10 14:01:45,569 INFO 14 CVClassLib.cvWorkThread - SessionsUri.AbsoluteUri is https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-10 14:01:45,570 INFO 14 CVClassLib.cvWorkThread - StartCVSession after Post task
+2013-06-10 14:01:45,570 INFO 14 CVClassLib.cvWorkThread - leaving StartCVSession 
+2013-06-10 14:02:13,721 INFO 19 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:3034389919 CallID:CA8e128bc7df9ad3093e82eb83a74fe722 Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:
+
+2013-06-10 14:02:13,721 INFO 19 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-10 14:02:13,721 INFO 19 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-10 14:02:13,722 INFO 19 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-10 14:02:13,722 INFO 19 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-10 14:02:13,722 INFO 19 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-10 14:02:13,722 INFO 19 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-10 14:02:13,722 INFO 19 CVClassLib.cvWorkThread - SessionURI property set to - 
+2013-06-10 14:02:13,723 INFO 9 CVClassLib.cvWorkThread - StartCVSession started.
+
+2013-06-10 14:02:13,723 INFO 9 CVClassLib.cvWorkThread - CVStartUpFailed property set to - False
+2013-06-10 14:02:13,723 INFO 9 CVClassLib.cvWorkThread - StartCVSession inside try block 
+2013-06-10 14:02:13,723 INFO 9 CVClassLib.cvWorkThread - stateChangeURI is http://web1.tunnlr.com:12670/state_change.cshtml
+2013-06-10 14:02:13,723 INFO 9 CVClassLib.cvWorkThread - newMessageURI is http://web1.tunnlr.com:12670/new_message.cshtml
+2013-06-10 14:02:13,723 INFO 9 CVClassLib.cvWorkThread - callerId is 3034389919
+2013-06-10 14:02:13,724 INFO 9 CVClassLib.cvWorkThread - callId is CA8e128bc7df9ad3093e82eb83a74fe722
+2013-06-10 14:02:13,724 INFO 9 CVClassLib.cvWorkThread - SessionsUri.AbsoluteUri is https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-10 14:02:13,724 INFO 9 CVClassLib.cvWorkThread - StartCVSession after Post task
+2013-06-10 14:02:13,724 INFO 9 CVClassLib.cvWorkThread - leaving StartCVSession 
+2013-06-10 14:02:48,250 INFO 19 CVClassLib.cvWorkThread - StartCVSession inside PostAsJsonAsync task 
+2013-06-10 14:02:48,250 INFO 19 CVClassLib.cvWorkThread - StartCVSession POST https://cvnet2.radishsystems.com/ivr/api/sessions failed! Reason - InternalServerError, Internal Server Error, <html>
+    <head>
+        <title>Runtime Error</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/IVR' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Runtime Error</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine.
+            <br><br>
+
+            <b>Details:</b> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;Off&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Notes:</b> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application&#39;s &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+    </body>
+</html>
+
+2013-06-10 14:02:48,251 INFO 19 CVClassLib.cvWorkThread - CVStartUpFailed property set to - True
+2013-06-10 14:02:48,252 INFO 19 CVClassLib.cvWorkThread - StartCVSession inside PostAsJsonAsync task 
+2013-06-10 14:02:48,252 INFO 19 CVClassLib.cvWorkThread - StartCVSession POST https://cvnet2.radishsystems.com/ivr/api/sessions failed! Reason - InternalServerError, Internal Server Error, <html>
+    <head>
+        <title>Runtime Error</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/IVR' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Runtime Error</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine.
+            <br><br>
+
+            <b>Details:</b> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;Off&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Notes:</b> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application&#39;s &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+    </body>
+</html>
+
+2013-06-10 14:02:48,252 INFO 19 CVClassLib.cvWorkThread - CVStartUpFailed property set to - True
+2013-06-11 10:30:06,812 INFO 28 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:6503850975 CallID:CAd9c68f8105592d1be534b7bf9f839ec7 Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:
+
+2013-06-11 10:30:07,190 INFO 28 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 10:30:07,190 INFO 28 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-11 10:30:07,214 INFO 28 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-11 10:30:07,215 INFO 28 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-11 10:30:07,215 INFO 28 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-11 10:30:07,215 INFO 28 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-11 10:30:07,223 INFO 28 CVClassLib.cvWorkThread - SessionURI property set to - 
+2013-06-11 10:30:07,336 INFO 32 CVClassLib.cvWorkThread - StartCVSession started.
+
+2013-06-11 10:30:07,358 INFO 32 CVClassLib.cvWorkThread - CVStartUpFailed property set to - False
+2013-06-11 10:30:07,392 INFO 32 CVClassLib.cvWorkThread - StartCVSession inside try block 
+2013-06-11 10:30:07,393 INFO 32 CVClassLib.cvWorkThread - stateChangeURI is http://web1.tunnlr.com:12670/state_change.cshtml
+2013-06-11 10:30:07,393 INFO 32 CVClassLib.cvWorkThread - newMessageURI is http://web1.tunnlr.com:12670/new_message.cshtml
+2013-06-11 10:30:07,393 INFO 32 CVClassLib.cvWorkThread - callerId is 6503850975
+2013-06-11 10:30:07,393 INFO 32 CVClassLib.cvWorkThread - callId is CAd9c68f8105592d1be534b7bf9f839ec7
+2013-06-11 10:30:07,393 INFO 32 CVClassLib.cvWorkThread - SessionsUri.AbsoluteUri is https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 10:30:07,465 INFO 32 CVClassLib.cvWorkThread - StartCVSession after Post task
+2013-06-11 10:30:07,465 INFO 32 CVClassLib.cvWorkThread - leaving StartCVSession 
+2013-06-11 10:30:30,202 INFO 30 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:6503850975 CallID:CAa190e46eeb344f1f52f0a894c742b6bf Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:
+
+2013-06-11 10:30:30,234 INFO 30 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 10:30:30,234 INFO 30 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-11 10:30:30,235 INFO 30 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-11 10:30:30,235 INFO 30 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-11 10:30:30,236 INFO 30 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-11 10:30:30,236 INFO 30 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-11 10:30:30,268 INFO 30 CVClassLib.cvWorkThread - SessionURI property set to - 
+2013-06-11 10:30:30,269 INFO 36 CVClassLib.cvWorkThread - StartCVSession started.
+
+2013-06-11 10:30:30,269 INFO 36 CVClassLib.cvWorkThread - CVStartUpFailed property set to - False
+2013-06-11 10:30:30,269 INFO 36 CVClassLib.cvWorkThread - StartCVSession inside try block 
+2013-06-11 10:30:30,269 INFO 36 CVClassLib.cvWorkThread - stateChangeURI is http://web1.tunnlr.com:12670/state_change.cshtml
+2013-06-11 10:30:30,269 INFO 36 CVClassLib.cvWorkThread - newMessageURI is http://web1.tunnlr.com:12670/new_message.cshtml
+2013-06-11 10:30:30,270 INFO 36 CVClassLib.cvWorkThread - callerId is 6503850975
+2013-06-11 10:30:30,270 INFO 36 CVClassLib.cvWorkThread - callId is CAa190e46eeb344f1f52f0a894c742b6bf
+2013-06-11 10:30:30,270 INFO 36 CVClassLib.cvWorkThread - SessionsUri.AbsoluteUri is https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 10:30:30,270 INFO 36 CVClassLib.cvWorkThread - StartCVSession after Post task
+2013-06-11 10:30:30,271 INFO 36 CVClassLib.cvWorkThread - leaving StartCVSession 
+2013-06-11 10:31:12,238 INFO 28 CVClassLib.cvWorkThread - StartCVSession inside PostAsJsonAsync task 
+2013-06-11 10:31:12,262 INFO 35 CVClassLib.cvWorkThread - StartCVSession inside PostAsJsonAsync task 
+2013-06-11 10:31:12,291 INFO 35 CVClassLib.cvWorkThread - StartCVSession POST https://cvnet2.radishsystems.com/ivr/api/sessions failed! Reason - InternalServerError, Internal Server Error, <html>
+    <head>
+        <title>Runtime Error</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/IVR' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Runtime Error</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine.
+            <br><br>
+
+            <b>Details:</b> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;Off&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Notes:</b> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application&#39;s &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+    </body>
+</html>
+
+2013-06-11 10:31:12,291 INFO 35 CVClassLib.cvWorkThread - CVStartUpFailed property set to - True
+2013-06-11 10:31:12,322 INFO 28 CVClassLib.cvWorkThread - StartCVSession POST https://cvnet2.radishsystems.com/ivr/api/sessions failed! Reason - InternalServerError, Internal Server Error, <html>
+    <head>
+        <title>Runtime Error</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/IVR' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Runtime Error</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine.
+            <br><br>
+
+            <b>Details:</b> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;Off&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Notes:</b> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application&#39;s &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+    </body>
+</html>
+
+2013-06-11 10:31:12,327 INFO 28 CVClassLib.cvWorkThread - CVStartUpFailed property set to - True
+2013-06-11 11:47:45,884 INFO 37 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:3034389919 CallID:CA76d06f38267b0375005b8c50d43e8257 Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:
+
+2013-06-11 11:47:45,884 INFO 37 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 11:47:45,884 INFO 37 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-11 11:47:45,885 INFO 37 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-11 11:47:45,885 INFO 37 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-11 11:47:45,886 INFO 37 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-11 11:47:45,886 INFO 37 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-11 11:47:45,886 INFO 37 CVClassLib.cvWorkThread - SessionURI property set to - 
+2013-06-11 11:47:45,887 INFO 33 CVClassLib.cvWorkThread - StartCVSession started.
+
+2013-06-11 11:47:45,887 INFO 33 CVClassLib.cvWorkThread - CVStartUpFailed property set to - False
+2013-06-11 11:47:45,888 INFO 33 CVClassLib.cvWorkThread - StartCVSession inside try block 
+2013-06-11 11:47:45,888 INFO 33 CVClassLib.cvWorkThread - stateChangeURI is http://web1.tunnlr.com:12670/state_change.cshtml
+2013-06-11 11:47:45,888 INFO 33 CVClassLib.cvWorkThread - newMessageURI is http://web1.tunnlr.com:12670/new_message.cshtml
+2013-06-11 11:47:45,888 INFO 33 CVClassLib.cvWorkThread - callerId is 3034389919
+2013-06-11 11:47:45,888 INFO 33 CVClassLib.cvWorkThread - callId is CA76d06f38267b0375005b8c50d43e8257
+2013-06-11 11:47:45,888 INFO 33 CVClassLib.cvWorkThread - SessionsUri.AbsoluteUri is https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 11:47:45,889 INFO 33 CVClassLib.cvWorkThread - StartCVSession after Post task
+2013-06-11 11:47:45,889 INFO 33 CVClassLib.cvWorkThread - leaving StartCVSession 
+2013-06-11 11:48:48,501 INFO 37 CVClassLib.cvWorkThread - StartCVSession inside PostAsJsonAsync task 
+2013-06-11 11:48:48,511 INFO 37 CVClassLib.cvWorkThread - StartCVSession POST https://cvnet2.radishsystems.com/ivr/api/sessions failed! Reason - InternalServerError, Internal Server Error, <html>
+    <head>
+        <title>Runtime Error</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/IVR' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Runtime Error</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine.
+            <br><br>
+
+            <b>Details:</b> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;Off&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Notes:</b> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application&#39;s &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+    </body>
+</html>
+
+2013-06-11 11:48:48,511 INFO 37 CVClassLib.cvWorkThread - CVStartUpFailed property set to - True
+2013-06-11 12:00:52,588 INFO 21 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:3032188238 CallID:CA7a6a5ed7dd9b117d471a1eef6e16079c Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:
+
+2013-06-11 12:00:52,589 INFO 21 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 12:00:52,589 INFO 21 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-11 12:00:52,590 INFO 21 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-11 12:00:52,590 INFO 21 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-11 12:00:52,590 INFO 21 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-11 12:00:52,591 INFO 21 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-11 12:00:52,591 INFO 21 CVClassLib.cvWorkThread - SessionURI property set to - 
+2013-06-11 12:00:52,592 INFO 17 CVClassLib.cvWorkThread - StartCVSession started.
+
+2013-06-11 12:00:52,592 INFO 17 CVClassLib.cvWorkThread - CVStartUpFailed property set to - False
+2013-06-11 12:00:52,592 INFO 17 CVClassLib.cvWorkThread - StartCVSession inside try block 
+2013-06-11 12:00:52,593 INFO 17 CVClassLib.cvWorkThread - stateChangeURI is http://web1.tunnlr.com:12670/state_change.cshtml
+2013-06-11 12:00:52,593 INFO 17 CVClassLib.cvWorkThread - newMessageURI is http://web1.tunnlr.com:12670/new_message.cshtml
+2013-06-11 12:00:52,593 INFO 17 CVClassLib.cvWorkThread - callerId is 3032188238
+2013-06-11 12:00:52,594 INFO 17 CVClassLib.cvWorkThread - callId is CA7a6a5ed7dd9b117d471a1eef6e16079c
+2013-06-11 12:00:52,594 INFO 17 CVClassLib.cvWorkThread - SessionsUri.AbsoluteUri is https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 12:00:52,594 INFO 17 CVClassLib.cvWorkThread - StartCVSession after Post task
+2013-06-11 12:00:52,594 INFO 17 CVClassLib.cvWorkThread - leaving StartCVSession 
+2013-06-11 12:01:11,295 INFO 18 CVClassLib.cvWorkThread - StartCVSession inside PostAsJsonAsync task 
+2013-06-11 12:01:11,312 INFO 18 CVClassLib.cvWorkThread - StartCVSession status code created 
+2013-06-11 12:01:11,384 INFO 18 CVClassLib.cvWorkThread - SessionURI property set to - https://cvnet2.radishsystems.com/IVR/api/session/12818
+2013-06-11 12:01:11,384 INFO 18 CVClassLib.cvWorkThread - SessionUri is https://cvnet2.radishsystems.com/IVR/api/session/12818
+2013-06-11 12:01:11,384 INFO 18 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 12:01:11,385 INFO 18 CVClassLib.cvWorkThread - fullPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\3032188238.txt
+2013-06-11 12:01:14,941 INFO 18 CVClassLib.cvWorkThread - StartCVSession async read completed 
+2013-06-11 12:01:14,978 INFO 18 CVClassLib.cvWorkThread - StartCVSession inside contentTask.Exception = null 
+2013-06-11 12:01:14,978 INFO 18 CVClassLib.cvWorkThread - StartCVSession session created 
+2013-06-11 12:01:14,979 INFO 18 CVClassLib.cvWorkThread - in ContinueCVSession
+2013-06-11 12:01:14,980 INFO 18 CVClassLib.cvWorkThread - Going to post http://cvnet.radishsystems.com/choiceview/ivr/twilio_main_menu.html to https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 12:01:14,981 INFO 18 CVClassLib.cvWorkThread - leaving ContinueCVSession
+2013-06-11 12:01:15,317 INFO 21 CVClassLib.cvWorkThread - inside ContinueCVSession task
+2013-06-11 12:01:17,524 INFO 21 CVClassLib.cvWorkThread - Sent http://web1.tunnlr.com:12670/CVMain.xml to Twilio. CallSid is CA7a6a5ed7dd9b117d471a1eef6e16079cAccountSid is AC2d0174e1f5b3aa768890b5770c5a54c7
+2013-06-11 12:01:22,203 INFO 18 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber: CallID: Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:https://cvnet2.radishsystems.com/IVR/api/session/12818
+
+2013-06-11 12:01:22,274 INFO 18 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 12:01:22,274 INFO 18 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-11 12:01:22,275 INFO 18 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-11 12:01:22,276 INFO 18 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-11 12:01:22,276 INFO 18 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-11 12:01:22,276 INFO 18 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-11 12:01:22,277 INFO 18 CVClassLib.cvWorkThread - SessionURI property set to - https://cvnet2.radishsystems.com/IVR/api/session/12818
+2013-06-11 12:01:22,279 INFO 13 CVClassLib.cvWorkThread - HandleControlMessage started - New
+
+
+2013-06-11 12:01:22,280 INFO 13 CVClassLib.cvWorkThread - SessionURI property retrieved - https://cvnet2.radishsystems.com/IVR/api/session/12818
+2013-06-11 12:01:22,280 INFO 13 CVClassLib.cvWorkThread - SessionURI in HandleControlMessage is 
+2013-06-11 12:01:22,280 INFO 13 CVClassLib.cvWorkThread - SessionURI property retrieved - https://cvnet2.radishsystems.com/IVR/api/session/12818
+2013-06-11 12:01:22,280 INFO 13 CVClassLib.cvWorkThread - after async get
+2013-06-11 12:01:22,431 INFO 24 CVClassLib.cvWorkThread - continuing async get
+2013-06-11 12:01:22,448 INFO 24 CVClassLib.cvWorkThread - session connected
+2013-06-11 12:01:22,449 INFO 24 CVClassLib.cvWorkThread - looking for control message link
+2013-06-11 12:01:22,449 INFO 24 CVClassLib.cvWorkThread - control message link is not null
+2013-06-11 12:01:22,449 INFO 24 CVClassLib.cvWorkThread - control message URI is https://cvnet2.radishsystems.com/IVR/api/session/12818/controlmessage
+2013-06-11 12:01:22,450 INFO 24 CVClassLib.cvWorkThread - in GetControlMessage - https://cvnet2.radishsystems.com/IVR/api/session/12818/controlmessage
+2013-06-11 12:01:22,512 INFO 24 CVClassLib.cvWorkThread - Last update: 6/11/2013 12:01:22 PM
+2013-06-11 12:01:22,709 INFO 18 CVClassLib.cvWorkThread - in GetControlMessage - successful response received
+2013-06-11 12:01:22,710 INFO 18 CVClassLib.cvWorkThread - in GetControlMessage - response read
+2013-06-11 12:01:22,711 INFO 18 CVClassLib.cvWorkThread - control message data is {"menuNumber":"1","menuName":"Twilio_Main_Menu","buttonNumber":"0","buttonName":"Visual_Response"}
+2013-06-11 12:01:22,719 INFO 18 CVClassLib.cvWorkThread - after deserialize of CM
+2013-06-11 12:01:22,721 INFO 18 CVClassLib.cvWorkThread - option for Interrupt is Visual_Response
+2013-06-11 12:01:22,721 INFO 18 CVClassLib.cvWorkThread - in SendURLToCV
+2013-06-11 12:01:22,722 INFO 18 CVClassLib.cvWorkThread - Going to post http://cvnet.radishsystems.com/choiceview/samples/generic_order_status.html to https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 12:01:22,722 INFO 18 CVClassLib.cvWorkThread - leaving SendURLToCV
+2013-06-11 12:01:22,833 INFO 24 CVClassLib.cvWorkThread - inside SendURLToCV task
+2013-06-11 12:01:23,413 INFO 24 CVClassLib.cvWorkThread - Sent http://web1.tunnlr.com:12670/CVOrderStatus.xml to Twilio. CallSid is CA7a6a5ed7dd9b117d471a1eef6e16079cAccountSid is AC2d0174e1f5b3aa768890b5770c5a54c7
+2013-06-11 12:01:32,723 INFO 18 CVClassLib.cvWorkThread - in ContinueCVSession
+2013-06-11 12:01:32,723 INFO 18 CVClassLib.cvWorkThread - Going to post http://cvnet.radishsystems.com/choiceview/ivr/twilio_main_menu.html to https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 12:01:32,723 INFO 18 CVClassLib.cvWorkThread - leaving ContinueCVSession
+2013-06-11 12:01:33,032 INFO 18 CVClassLib.cvWorkThread - inside ContinueCVSession task
+2013-06-11 12:01:33,032 INFO 18 CVClassLib.cvWorkThread - Post https://cvnet2.radishsystems.com/IVR/api/session/12818 application/json failed! Reason - NotFound, Not Found, {"Headers":[{"Key":"Content-Type","Value":["text/plain; charset=utf-8"]}]}
+2013-06-11 12:01:33,077 INFO 21 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:3032188238 CallID:CA7a6a5ed7dd9b117d471a1eef6e16079c Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:https://cvnet2.radishsystems.com/IVR/api/session/12818
+
+2013-06-11 12:01:33,090 INFO 21 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 12:01:33,091 INFO 21 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-11 12:01:33,092 INFO 21 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-11 12:01:33,092 INFO 21 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-11 12:01:33,092 INFO 21 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-11 12:01:33,093 INFO 21 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-11 12:01:33,093 INFO 21 CVClassLib.cvWorkThread - SessionURI property set to - https://cvnet2.radishsystems.com/IVR/api/session/12818
+2013-06-11 12:01:33,096 INFO 9 CVClassLib.cvWorkThread - HandleControlMessage started - State
+
+
+2013-06-11 12:01:33,096 INFO 9 CVClassLib.cvWorkThread - SessionURI property retrieved - https://cvnet2.radishsystems.com/IVR/api/session/12818
+2013-06-11 12:01:33,097 INFO 9 CVClassLib.cvWorkThread - SessionURI in HandleControlMessage is 
+2013-06-11 12:01:33,097 INFO 9 CVClassLib.cvWorkThread - SessionURI property retrieved - https://cvnet2.radishsystems.com/IVR/api/session/12818
+2013-06-11 12:01:33,097 INFO 9 CVClassLib.cvWorkThread - after async get
+2013-06-11 12:01:33,243 INFO 24 CVClassLib.cvWorkThread - continuing async get
+2013-06-11 12:01:33,243 INFO 24 CVClassLib.cvWorkThread - switching on StatusCode
+2013-06-11 12:01:33,244 INFO 24 CVClassLib.cvWorkThread - HttpStatusCode.NotFound detected
+2013-06-11 12:01:33,245 INFO 24 CVClassLib.cvWorkThread - status for Twilio Interrupt is disconnected
+2013-06-11 12:01:33,574 INFO 18 CVClassLib.cvWorkThread - Sent http://web1.tunnlr.com:12670/main-menu.xml to Twilio. CallSid is CA7a6a5ed7dd9b117d471a1eef6e16079cAccountSid is AC2d0174e1f5b3aa768890b5770c5a54c7
+2013-06-11 12:01:33,872 INFO 24 CVClassLib.cvWorkThread - Sent http://web1.tunnlr.com:12670/CVGoodBye.xml to Twilio. CallSid is CA7a6a5ed7dd9b117d471a1eef6e16079cAccountSid is AC2d0174e1f5b3aa768890b5770c5a54c7
+2013-06-11 12:01:57,733 INFO 24 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:3032188238 CallID:CA1edebf7280b4767903cfe17bf7c4e5f1 Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:
+
+2013-06-11 12:01:57,734 INFO 24 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 12:01:57,734 INFO 24 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-11 12:01:57,735 INFO 24 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-11 12:01:57,735 INFO 24 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-11 12:01:57,736 INFO 24 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-11 12:01:57,736 INFO 24 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-11 12:01:57,736 INFO 24 CVClassLib.cvWorkThread - SessionURI property set to - 
+2013-06-11 12:01:57,738 INFO 64 CVClassLib.cvWorkThread - StartCVSession started.
+
+2013-06-11 12:01:57,738 INFO 64 CVClassLib.cvWorkThread - CVStartUpFailed property set to - False
+2013-06-11 12:01:57,739 INFO 64 CVClassLib.cvWorkThread - StartCVSession inside try block 
+2013-06-11 12:01:57,739 INFO 64 CVClassLib.cvWorkThread - stateChangeURI is http://web1.tunnlr.com:12670/state_change.cshtml
+2013-06-11 12:01:57,739 INFO 64 CVClassLib.cvWorkThread - newMessageURI is http://web1.tunnlr.com:12670/new_message.cshtml
+2013-06-11 12:01:57,739 INFO 64 CVClassLib.cvWorkThread - callerId is 3032188238
+2013-06-11 12:01:57,739 INFO 64 CVClassLib.cvWorkThread - callId is CA1edebf7280b4767903cfe17bf7c4e5f1
+2013-06-11 12:01:57,740 INFO 64 CVClassLib.cvWorkThread - SessionsUri.AbsoluteUri is https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 12:01:57,740 INFO 64 CVClassLib.cvWorkThread - StartCVSession after Post task
+2013-06-11 12:01:57,740 INFO 64 CVClassLib.cvWorkThread - leaving StartCVSession 
+2013-06-11 12:02:03,737 INFO 18 CVClassLib.cvWorkThread - StartCVSession inside PostAsJsonAsync task 
+2013-06-11 12:02:03,737 INFO 18 CVClassLib.cvWorkThread - StartCVSession status code created 
+2013-06-11 12:02:03,738 INFO 18 CVClassLib.cvWorkThread - SessionURI property set to - https://cvnet2.radishsystems.com/IVR/api/session/12819
+2013-06-11 12:02:03,738 INFO 18 CVClassLib.cvWorkThread - SessionUri is https://cvnet2.radishsystems.com/IVR/api/session/12819
+2013-06-11 12:02:03,738 INFO 18 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 12:02:03,738 INFO 18 CVClassLib.cvWorkThread - fullPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\3032188238.txt
+2013-06-11 12:02:03,756 INFO 18 CVClassLib.cvWorkThread - StartCVSession async read completed 
+2013-06-11 12:02:03,757 INFO 18 CVClassLib.cvWorkThread - StartCVSession inside contentTask.Exception = null 
+2013-06-11 12:02:03,757 INFO 18 CVClassLib.cvWorkThread - StartCVSession session created 
+2013-06-11 12:02:03,757 INFO 18 CVClassLib.cvWorkThread - in ContinueCVSession
+2013-06-11 12:02:03,757 INFO 18 CVClassLib.cvWorkThread - Going to post http://cvnet.radishsystems.com/choiceview/ivr/twilio_main_menu.html to https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 12:02:03,758 INFO 18 CVClassLib.cvWorkThread - leaving ContinueCVSession
+2013-06-11 12:02:03,952 INFO 18 CVClassLib.cvWorkThread - inside ContinueCVSession task
+2013-06-11 12:02:04,631 INFO 18 CVClassLib.cvWorkThread - Sent http://web1.tunnlr.com:12670/CVMain.xml to Twilio. CallSid is CA1edebf7280b4767903cfe17bf7c4e5f1AccountSid is AC2d0174e1f5b3aa768890b5770c5a54c7
+2013-06-11 12:02:09,847 INFO 18 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber: CallID: Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:https://cvnet2.radishsystems.com/IVR/api/session/12819
+
+2013-06-11 12:02:09,847 INFO 18 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 12:02:09,848 INFO 18 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-11 12:02:09,849 INFO 18 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-11 12:02:09,849 INFO 18 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-11 12:02:09,849 INFO 18 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-11 12:02:09,850 INFO 18 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-11 12:02:09,850 INFO 18 CVClassLib.cvWorkThread - SessionURI property set to - https://cvnet2.radishsystems.com/IVR/api/session/12819
+2013-06-11 12:02:09,851 INFO 64 CVClassLib.cvWorkThread - HandleControlMessage started - New
+
+
+2013-06-11 12:02:09,851 INFO 64 CVClassLib.cvWorkThread - SessionURI property retrieved - https://cvnet2.radishsystems.com/IVR/api/session/12819
+2013-06-11 12:02:09,851 INFO 64 CVClassLib.cvWorkThread - SessionURI in HandleControlMessage is 
+2013-06-11 12:02:09,852 INFO 64 CVClassLib.cvWorkThread - SessionURI property retrieved - https://cvnet2.radishsystems.com/IVR/api/session/12819
+2013-06-11 12:02:09,852 INFO 64 CVClassLib.cvWorkThread - after async get
+2013-06-11 12:02:10,003 INFO 18 CVClassLib.cvWorkThread - continuing async get
+2013-06-11 12:02:10,018 INFO 18 CVClassLib.cvWorkThread - session connected
+2013-06-11 12:02:10,019 INFO 18 CVClassLib.cvWorkThread - looking for control message link
+2013-06-11 12:02:10,019 INFO 18 CVClassLib.cvWorkThread - control message link is not null
+2013-06-11 12:02:10,019 INFO 18 CVClassLib.cvWorkThread - control message URI is https://cvnet2.radishsystems.com/IVR/api/session/12819/controlmessage
+2013-06-11 12:02:10,019 INFO 18 CVClassLib.cvWorkThread - in GetControlMessage - https://cvnet2.radishsystems.com/IVR/api/session/12819/controlmessage
+2013-06-11 12:02:10,020 INFO 18 CVClassLib.cvWorkThread - Last update: 6/11/2013 12:02:10 PM
+2013-06-11 12:02:10,141 INFO 18 CVClassLib.cvWorkThread - in GetControlMessage - successful response received
+2013-06-11 12:02:10,141 INFO 18 CVClassLib.cvWorkThread - in GetControlMessage - response read
+2013-06-11 12:02:10,141 INFO 18 CVClassLib.cvWorkThread - control message data is {"menuNumber":"1","menuName":"Twilio_Main_Menu","buttonNumber":"1","buttonName":"Radish_Website"}
+2013-06-11 12:02:10,141 INFO 18 CVClassLib.cvWorkThread - after deserialize of CM
+2013-06-11 12:02:10,142 INFO 18 CVClassLib.cvWorkThread - option for Interrupt is Radish_Website
+2013-06-11 12:02:10,142 INFO 18 CVClassLib.cvWorkThread - in SendURLToCV
+2013-06-11 12:02:10,142 INFO 18 CVClassLib.cvWorkThread - Going to post http://www.radishsystems.com to https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 12:02:10,142 INFO 18 CVClassLib.cvWorkThread - leaving SendURLToCV
+2013-06-11 12:02:10,142 INFO 18 CVClassLib.cvWorkThread - sleeping for 5
+2013-06-11 12:02:10,250 INFO 21 CVClassLib.cvWorkThread - inside SendURLToCV task
+2013-06-11 12:02:10,953 INFO 21 CVClassLib.cvWorkThread - Sent http://web1.tunnlr.com:12670/CVWebsite.xml to Twilio. CallSid is CA1edebf7280b4767903cfe17bf7c4e5f1AccountSid is AC2d0174e1f5b3aa768890b5770c5a54c7
+2013-06-11 12:02:15,142 INFO 18 CVClassLib.cvWorkThread - going to  DeleteCVSession
+2013-06-11 12:02:15,143 INFO 18 CVClassLib.cvWorkThread - Starting DeleteCVSession
+2013-06-11 12:02:15,144 INFO 18 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 12:02:15,145 INFO 18 CVClassLib.cvWorkThread - fullPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\3032188238.txt
+2013-06-11 12:02:15,146 INFO 18 CVClassLib.cvWorkThread - After Client.DeleteAsync in DeleteCVSession
+2013-06-11 12:02:15,146 INFO 18 CVClassLib.cvWorkThread - back from  DeleteCVSession
+2013-06-11 12:02:15,209 INFO 24 CVClassLib.cvWorkThread - continuing task in DeleteCVSession
+2013-06-11 12:02:15,209 INFO 24 CVClassLib.cvWorkThread - CV session disconnected
+2013-06-11 12:02:15,209 INFO 24 CVClassLib.cvWorkThread - status for Twilio Interrupt is disconnected
+2013-06-11 12:02:15,862 INFO 24 CVClassLib.cvWorkThread - Sent http://web1.tunnlr.com:12670/CVGoodBye.xml to Twilio. CallSid is CA1edebf7280b4767903cfe17bf7c4e5f1AccountSid is AC2d0174e1f5b3aa768890b5770c5a54c7
+2013-06-11 14:28:42,713 INFO 105 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:3034389919 CallID:CA19a868a458cffa06491dbfa7268ecb28 Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:
+
+2013-06-11 14:28:42,713 INFO 105 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-11 14:28:42,714 INFO 105 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-11 14:28:42,714 INFO 105 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-11 14:28:42,715 INFO 105 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-11 14:28:42,715 INFO 105 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-11 14:28:42,715 INFO 105 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-11 14:28:42,715 INFO 105 CVClassLib.cvWorkThread - SessionURI property set to - 
+2013-06-11 14:28:42,716 INFO 109 CVClassLib.cvWorkThread - StartCVSession started.
+
+2013-06-11 14:28:42,717 INFO 109 CVClassLib.cvWorkThread - CVStartUpFailed property set to - False
+2013-06-11 14:28:42,717 INFO 109 CVClassLib.cvWorkThread - StartCVSession inside try block 
+2013-06-11 14:28:42,717 INFO 109 CVClassLib.cvWorkThread - stateChangeURI is http://web1.tunnlr.com:12670/state_change.cshtml
+2013-06-11 14:28:42,717 INFO 109 CVClassLib.cvWorkThread - newMessageURI is http://web1.tunnlr.com:12670/new_message.cshtml
+2013-06-11 14:28:42,717 INFO 109 CVClassLib.cvWorkThread - callerId is 3034389919
+2013-06-11 14:28:42,718 INFO 109 CVClassLib.cvWorkThread - callId is CA19a868a458cffa06491dbfa7268ecb28
+2013-06-11 14:28:42,718 INFO 109 CVClassLib.cvWorkThread - SessionsUri.AbsoluteUri is https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-11 14:28:42,719 INFO 109 CVClassLib.cvWorkThread - StartCVSession after Post task
+2013-06-11 14:28:42,719 INFO 109 CVClassLib.cvWorkThread - leaving StartCVSession 
+2013-06-11 14:29:45,201 INFO 108 CVClassLib.cvWorkThread - StartCVSession inside PostAsJsonAsync task 
+2013-06-11 14:29:45,202 INFO 108 CVClassLib.cvWorkThread - StartCVSession POST https://cvnet2.radishsystems.com/ivr/api/sessions failed! Reason - InternalServerError, Internal Server Error, <html>
+    <head>
+        <title>Runtime Error</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/IVR' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Runtime Error</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine.
+            <br><br>
+
+            <b>Details:</b> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;Off&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Notes:</b> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application&#39;s &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+    </body>
+</html>
+
+2013-06-11 14:29:45,202 INFO 108 CVClassLib.cvWorkThread - CVStartUpFailed property set to - True
+2013-06-12 09:39:57,451 INFO 5 CVClassLib.cvWorkThread - Instantiating cvWorkThread. PhoneNumber:3034389919 CallID:CA7a92098226377eead62f949b408ec9e1 Account:AC2d0174e1f5b3aa768890b5770c5a54c7 SessionUri:
+
+2013-06-12 09:39:57,546 INFO 5 CVClassLib.cvWorkThread - filePath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\
+2013-06-12 09:39:57,547 INFO 5 CVClassLib.cvWorkThread - configPath is C:\Users\Jim\Documents\My Web Sites\TwilioIVR\App_Data\TwilioIVR.config
+2013-06-12 09:39:57,549 INFO 5 CVClassLib.cvWorkThread - after xml config loaded
+2013-06-12 09:39:57,549 INFO 5 CVClassLib.cvWorkThread - signalURI is http://web1.tunnlr.com:12670
+2013-06-12 09:39:57,549 INFO 5 CVClassLib.cvWorkThread - transferAccount is radish
+2013-06-12 09:39:57,550 INFO 5 CVClassLib.cvWorkThread - baseURIString is https://cvnet2.radishsystems.com
+2013-06-12 09:39:57,551 INFO 5 CVClassLib.cvWorkThread - SessionURI property set to - 
+2013-06-12 09:39:57,566 INFO 7 CVClassLib.cvWorkThread - StartCVSession started.
+
+2013-06-12 09:39:57,567 INFO 7 CVClassLib.cvWorkThread - CVStartUpFailed property set to - False
+2013-06-12 09:39:57,575 INFO 7 CVClassLib.cvWorkThread - StartCVSession inside try block 
+2013-06-12 09:39:57,576 INFO 7 CVClassLib.cvWorkThread - stateChangeURI is http://web1.tunnlr.com:12670/state_change.cshtml
+2013-06-12 09:39:57,576 INFO 7 CVClassLib.cvWorkThread - newMessageURI is http://web1.tunnlr.com:12670/new_message.cshtml
+2013-06-12 09:39:57,576 INFO 7 CVClassLib.cvWorkThread - callerId is 3034389919
+2013-06-12 09:39:57,576 INFO 7 CVClassLib.cvWorkThread - callId is CA7a92098226377eead62f949b408ec9e1
+2013-06-12 09:39:57,576 INFO 7 CVClassLib.cvWorkThread - SessionsUri.AbsoluteUri is https://cvnet2.radishsystems.com/ivr/api/sessions
+2013-06-12 09:39:57,601 INFO 7 CVClassLib.cvWorkThread - StartCVSession after Post task
+2013-06-12 09:39:57,602 INFO 7 CVClassLib.cvWorkThread - leaving StartCVSession 
+2013-06-12 09:41:00,370 INFO 6 CVClassLib.cvWorkThread - StartCVSession inside PostAsJsonAsync task 
+2013-06-12 09:41:00,371 INFO 6 CVClassLib.cvWorkThread - StartCVSession POST https://cvnet2.radishsystems.com/ivr/api/sessions failed! Reason - InternalServerError, Internal Server Error, <html>
+    <head>
+        <title>Runtime Error</title>
+        <style>
+         body {font-family:"Verdana";font-weight:normal;font-size: .7em;color:black;} 
+         p {font-family:"Verdana";font-weight:normal;color:black;margin-top: -5px}
+         b {font-family:"Verdana";font-weight:bold;color:black;margin-top: -5px}
+         H1 { font-family:"Verdana";font-weight:normal;font-size:18pt;color:red }
+         H2 { font-family:"Verdana";font-weight:normal;font-size:14pt;color:maroon }
+         pre {font-family:"Lucida Console";font-size: .9em}
+         .marker {font-weight: bold; color: black;text-decoration: none;}
+         .version {color: gray;}
+         .error {margin-bottom: 10px;}
+         .expandable { text-decoration:underline; font-weight:bold; color:navy; cursor:hand; }
+        </style>
+    </head>
+
+    <body bgcolor="white">
+
+            <span><H1>Server Error in '/IVR' Application.<hr width=100% size=1 color=silver></H1>
+
+            <h2> <i>Runtime Error</i> </h2></span>
+
+            <font face="Arial, Helvetica, Geneva, SunSans-Regular, sans-serif ">
+
+            <b> Description: </b>An application error occurred on the server. The current custom error settings for this application prevent the details of the application error from being viewed remotely (for security reasons). It could, however, be viewed by browsers running on the local server machine.
+            <br><br>
+
+            <b>Details:</b> To enable the details of this specific error message to be viewable on remote machines, please create a &lt;customErrors&gt; tag within a &quot;web.config&quot; configuration file located in the root directory of the current web application. This &lt;customErrors&gt; tag should then have its &quot;mode&quot; attribute set to &quot;Off&quot;.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;Off&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+            <b>Notes:</b> The current error page you are seeing can be replaced by a custom error page by modifying the &quot;defaultRedirect&quot; attribute of the application&#39;s &lt;customErrors&gt; configuration tag to point to a custom error page URL.<br><br>
+
+            <table width=100% bgcolor="#ffffcc">
+               <tr>
+                  <td>
+                      <code><pre>
+
+&lt;!-- Web.Config Configuration File --&gt;
+
+&lt;configuration&gt;
+    &lt;system.web&gt;
+        &lt;customErrors mode=&quot;RemoteOnly&quot; defaultRedirect=&quot;mycustompage.htm&quot;/&gt;
+    &lt;/system.web&gt;
+&lt;/configuration&gt;</pre></code>
+
+                  </td>
+               </tr>
+            </table>
+
+            <br>
+
+    </body>
+</html>
+
+2013-06-12 09:41:00,372 INFO 6 CVClassLib.cvWorkThread - CVStartUpFailed property set to - True

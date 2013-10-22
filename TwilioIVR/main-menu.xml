@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Response>
+    <Gather action="handle-main-menu-user-input.cshtml" numDigits="1">
+	    <Say>Press 1 for order status.  Press 2 for customer support.  Press 3 to replay this menu.  You can also visit us online at www.radishsystems.com</Say>
+    </Gather>
+    <!-- If customer doesn't input anything, send them to IVR script. -->    <Say>I'm sorry. We didn't get your response.</Say>
+    <Redirect method="GET">main-menu.xml</Redirect>
+</Response>

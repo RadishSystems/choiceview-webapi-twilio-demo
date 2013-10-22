@@ -1,0 +1,33 @@
+﻿@using System;
+@using Twilio;
+
+@{
+    Response.ContentType = "text/xml";
+    
+    var twiml = new Twilio.TwiML.TwilioResponse();
+    
+    int user_pushed = int.Parse(Request["Digits"]);
+
+    if (user_pushed == 1)
+    {
+        twiml.Say("The estimated delivery date is February 5, 2013.  The carrier is U P S.  The tracking number is 1ZE0850A0313001160.");
+        twiml.Redirect("main-menu.xml", "GET");
+    }
+    else 
+    if (user_pushed == 2)
+    {
+        twiml.Say("Your call is being transferred.");
+        twiml.Dial("321-309-2786");
+    }
+    else 
+    if (user_pushed == 3)
+    {
+        twiml.Redirect("main-menu.xml", "GET");
+    }
+    else 
+    {   // handle invalid input
+        twiml.Say("I'm sorry. That is not a valid choice. Please try again.");
+
+    }
+}
+@Html.Raw(twiml.ToString())

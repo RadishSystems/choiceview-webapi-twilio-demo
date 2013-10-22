@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>"OK. I'll wait for you to return."</Say>
+    <Pause length="30"/>
+   <Redirect method="GET">Pause.xml</Redirect>
+</Response>

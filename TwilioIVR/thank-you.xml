@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Response>
+    <Say>Thank you for calling.  Please listen closely as our menu options have changed.</Say>
+     <Redirect method="GET">main-menu.xml</Redirect>
+</Response>
