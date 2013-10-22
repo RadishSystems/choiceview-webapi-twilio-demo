@@ -47,9 +47,6 @@ Application.
 
 Contact Information
 -------------------
-
-Contact Information
--------------------
 If you want more information on ChoiceView, or want access to the ChoiceView REST API, contact us.
 
 [Radish Systems, LLC](http://www.radishsystems.com/support/contact-radish-customer-support/)
