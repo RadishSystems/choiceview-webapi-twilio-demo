@@ -134,8 +134,8 @@ namespace CVClassLib
                 var param =
                     Convert.ToBase64String(
                         System.Text.Encoding.ASCII.GetBytes(String.Format("{0}:{1}",
-                                                                            "demo",
-                                                                            "radisH1!")));
+                                                                            "account",
+                                                                            "password")));
 
                 Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("basic", param);
             }
