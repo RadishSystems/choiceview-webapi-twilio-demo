@@ -6,6 +6,14 @@ A demo showing how to use the ChoiceView API with the Twilio API to create a vis
 Overview
 --------
 
+ChoiceView is a Communications-as-a-Service (CAAS) platform consisting of a protocol, switching mechanism and corresponding software applications to allow smartphone users to receive and send visual information and data during an ordinary phone call.  In essence, ChoiceView joins a voice call with an associated data connection to allow a caller to speak with another party while that party shares relevant visual information in real time.
+ 
+The goal of ChoiceView is to easily add enhanced voice/data capabilities to the huge installed based of telephony switches, IVRs, mobile devices and other network endpoints.
+
+
+Description
+-----------
+
 This repository contains source code for a ChoiceView implementation on the Twilio platform. On the Twilio server you need to configure the "Voice Request URL" to point to your web site and make sure that your web site is enabled to allow Post requests.
 
 The application consists of two parts: a c# dll which interfaces with the ChoiceView API and a Webmatrix project consisting of xml and cshtml files which interface with the Twilio API.
