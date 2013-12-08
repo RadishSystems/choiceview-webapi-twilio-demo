@@ -18,7 +18,7 @@ This repository contains source code for a ChoiceView implementation on the Twil
 
 The application consists of two parts: a c# dll which interfaces with the ChoiceView API and a Webmatrix project consisting of xml and cshtml files which interface with the Twilio API.
 
-The demo begins with the start.xml file which plays the ChoiceView signature prompt and then redirects to launchCV.cshtml. This file calls the cvWorkThread in the CVClassLib dll to notify the 
+The demo begins with the start.xml file which plays the ChoiceView signature prompt and then redirects to launchCV.cshtml. This file calls the cvWorkThread in the CVClassLib dll (see cvWorkThread.cs) to notify the 
 ChoiceView Server of the incoming session. It then redirects to Start2.xml to play the initial prompt to the caller. Control will stay in that module until the caller activates the ChoiceView
 app on their mobile device. If the caller does not activate the Choiceview app, there are a series of xml files which control a voice only flow for the caller. If the caller activates 
 ChoiceView on their mobile device, the ChoiceView Server will respond to the incoming session notification which will cause the thread to redirect the Twilio app to the ChoiceView main Menu. 
